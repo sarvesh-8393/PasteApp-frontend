@@ -98,12 +98,14 @@ fetchRecent();
         <h2 className="text-3xl font-bold text-white mb-6">📝 Create Paste</h2>
 
         <input
+         value={title}
           className="w-full mb-4 px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
           placeholder="Enter title..."
           onChange={(e) => setTitle(e.target.value)}
         />
 
         <textarea
+        value={content}
           className="w-full h-[300px] px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-cyan-400"
           placeholder="Start typing content..."
           onChange={(e) => setContent(e.target.value)}
