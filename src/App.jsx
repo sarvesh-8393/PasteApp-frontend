@@ -48,10 +48,10 @@ function App() {
           <Route
           path="/view/:id"
           element={
-            <ProtectedRoute>
+          <>
               <NavBar />
               <ViewPaste />
-            </ProtectedRoute>
+   </>
           }
         />
 
